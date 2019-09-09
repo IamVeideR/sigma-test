@@ -1,0 +1,223 @@
+.header {
+    &__container {
+        background-color: #121111;
+        height: 47px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        height: 19px;
+    }
+    &__language {
+        width: 36px;
+        font-size: 14px;
+        position: relative;
+        cursor: pointer;        
+    }
+    &__dropdown {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    &__color-mode {
+        cursor: pointer;
+    }
+    &__search {
+        cursor: pointer;
+    }
+    &__sign-up {
+        background: url('https://s3-alpha-sig.figma.com/img/0d80/a118/1979f4ae211f9b4d9e9a91699939e1e8?Expires=1567987200&Signature=Ygt0FpKkEHAKdp9TYoflH4qWjOd1yckGgfZQTEc-SgeRg0vkUjZFPNsjAGSx9Ye58ssP4j~O3M4NET0B6UNk4DApfWNgTm9LxTKmgmAkyzEQ5MY7wG4A1eGgcxGyNty68zYqrtgTC-yC6t2xOLGZQzY9Iq9p-0CDrOsR3tY2SNE53eVveolLT1~5~netLaBW4CwCz8bYqwvDJUH5vu2-VDlnCEkRhMA46W4tFP-1OScs5C6NLLLJPf69wYFTerzkVniEaF--gAcDO-yhF8qhd-8xWgp6p~8QSdFYMEzTBiq3LB4l-m-nmb6OHHTyKxMZgKnPwqNoVwAQeSNhVvSPYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+        background-size: cover;
+        padding: 7px 10px;
+        font-size: 14px;
+        font-family: 'Karla', sans-serif;
+        line-height: 16px;
+        color: white;
+    }
+}
+.menu {
+    &__container {
+        background: url('https://s3-alpha-sig.figma.com/img/0d80/a118/1979f4ae211f9b4d9e9a91699939e1e8?Expires=1567987200&Signature=Ygt0FpKkEHAKdp9TYoflH4qWjOd1yckGgfZQTEc-SgeRg0vkUjZFPNsjAGSx9Ye58ssP4j~O3M4NET0B6UNk4DApfWNgTm9LxTKmgmAkyzEQ5MY7wG4A1eGgcxGyNty68zYqrtgTC-yC6t2xOLGZQzY9Iq9p-0CDrOsR3tY2SNE53eVveolLT1~5~netLaBW4CwCz8bYqwvDJUH5vu2-VDlnCEkRhMA46W4tFP-1OScs5C6NLLLJPf69wYFTerzkVniEaF--gAcDO-yhF8qhd-8xWgp6p~8QSdFYMEzTBiq3LB4l-m-nmb6OHHTyKxMZgKnPwqNoVwAQeSNhVvSPYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+        background-size: cover;
+        height: 58px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;    
+        margin-top: 5px;
+    }
+    &__item {
+        cursor: pointer;
+        line-height: 15px;
+        margin-right: 28px;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid #121111;
+        }
+    }
+    &__dots {
+        display: flex;
+        justify-content: space-between;
+        width: 35px;
+        margin-top: 8px;
+    }
+    &__dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #121111;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+}
+.content {
+    &__container {
+        background-color: #121111;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+    &__top {
+        padding: 5px 10px;
+        background: url('https://s3-alpha-sig.figma.com/img/0d80/a118/1979f4ae211f9b4d9e9a91699939e1e8?Expires=1567987200&Signature=Ygt0FpKkEHAKdp9TYoflH4qWjOd1yckGgfZQTEc-SgeRg0vkUjZFPNsjAGSx9Ye58ssP4j~O3M4NET0B6UNk4DApfWNgTm9LxTKmgmAkyzEQ5MY7wG4A1eGgcxGyNty68zYqrtgTC-yC6t2xOLGZQzY9Iq9p-0CDrOsR3tY2SNE53eVveolLT1~5~netLaBW4CwCz8bYqwvDJUH5vu2-VDlnCEkRhMA46W4tFP-1OScs5C6NLLLJPf69wYFTerzkVniEaF--gAcDO-yhF8qhd-8xWgp6p~8QSdFYMEzTBiq3LB4l-m-nmb6OHHTyKxMZgKnPwqNoVwAQeSNhVvSPYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+        background-size: cover;
+        width: 82px;
+        margin-bottom: 18px;
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        line-height: 20px;
+        padding-bottom: 5px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 110%;
+            left: -5%;
+            bottom: 0;
+            height: 1px;
+            background-color: #fff;
+        }
+        .navigation {
+            &__favorite {
+            }
+            &__name {
+                width: 106px;
+            }
+            &__price {
+                width: 69px;
+            }
+        
+            &__graph {
+                width: 85px;
+            }
+        }
+    }
+    &__show {
+        background: url('https://s3-alpha-sig.figma.com/img/0d80/a118/1979f4ae211f9b4d9e9a91699939e1e8?Expires=1567987200&Signature=Ygt0FpKkEHAKdp9TYoflH4qWjOd1yckGgfZQTEc-SgeRg0vkUjZFPNsjAGSx9Ye58ssP4j~O3M4NET0B6UNk4DApfWNgTm9LxTKmgmAkyzEQ5MY7wG4A1eGgcxGyNty68zYqrtgTC-yC6t2xOLGZQzY9Iq9p-0CDrOsR3tY2SNE53eVveolLT1~5~netLaBW4CwCz8bYqwvDJUH5vu2-VDlnCEkRhMA46W4tFP-1OScs5C6NLLLJPf69wYFTerzkVniEaF--gAcDO-yhF8qhd-8xWgp6p~8QSdFYMEzTBiq3LB4l-m-nmb6OHHTyKxMZgKnPwqNoVwAQeSNhVvSPYQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+        background-size: cover;
+        padding: 7px 10px;
+        width: 148px;
+        text-align: center;
+        margin: 30px auto;
+        font-size: 14px;
+        font-family: 'Karla', sans-serif;
+        line-height: 16px;
+        color: white;   
+    }
+}
+.product {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__favorite {
+        width: 12px;
+        height: 12px;
+        border-radius: 4px;
+        border: 1px solid white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        path {
+            fill: transparent;
+        }     
+
+        &:hover {
+            border-color: #8D2CE2;
+        }
+
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-size: cover!important;
+        background-position: center!important;
+    }
+    &__name {
+        font-size: 17px;
+        padding-left: 5px;
+    }
+    &__cap {
+        font-size: 10px;
+        width: 100%;
+        padding-top: 3px;
+    }
+    &__crr {
+        font-size: 10px;
+        width: 100%;
+        padding-top: 3px;
+    }
+    &__name-icon {
+        display: flex;
+    }
+    &__name-block {
+        width: 106px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__price {
+        font-size: 15px;
+    }
+    &__price-rel {
+        font-size: 15px;
+        padding-top: 1px;
+        text-transform: lowercase;
+    }
+    &__price-block {
+        width: 69px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    &__graph-block {
+        width: 85px;
+        position: relative;
+        height: 50px;
+    }
+    &__graph-percent {
+        font-size: 10px;
+        position: absolute;
+    }
+    .favorite-active {
+        path {
+            fill: white;
+        }
+    }
+}
